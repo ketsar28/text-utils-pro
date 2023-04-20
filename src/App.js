@@ -3,9 +3,6 @@ import TextForm from "./components/TextForm";
 import "./App.css";
 import { useState } from "react";
 import Alert from "./components/Alert";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// import About from "./components/About";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -39,7 +36,6 @@ function App() {
   };
 
   return (
-    // <BrowserRouter>
     <div>
       <Navbar mode={mode} modeName={modeName} click={ChangeNav} />
       <Alert alert={alert} />
@@ -50,24 +46,7 @@ function App() {
         mode={mode}
         alert={showAlert}
       />
-      {/* <Routes> */}
-        {/* <Route
-          path="/"
-          element={
-            <TextForm
-              title="Enter Your Message For Us! - Converting the Text - Manipulate the Text - Download of Updated the Text"
-              titlesecond="Counting the Characters"
-              words="Input Whatever On Here!"
-              mode={mode}
-              alert={showAlert}
-            />
-          }
-        /> */}
-
-        {/* <Route path="about" element={<About mode={mode} />} /> */}
-      {/* </Routes> */}
     </div>
-    // </BrowserRouter>
   );
 }
 

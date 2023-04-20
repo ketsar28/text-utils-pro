@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-
 const Navbar = (props) => {
   return (
     <nav
@@ -28,23 +26,7 @@ const Navbar = (props) => {
                 Home
               </a>
             </li>
-            {/* <li className="nav-item">
-              <Link className="nav-link " to="/about">
-                About
-              </Link>
-            </li> */}
           </ul>
-          <form className="d-flex mb-2" role="search">
-            <input
-              className="form-control"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-light text-success mx-2" type="submit">
-              Search
-            </button>
-          </form>
         </div>
         <div
           className={`form-check form-switch text-white`}
